@@ -4,12 +4,6 @@ description: "Setup DocFX"
 runs:
   using: "composite"
   steps:
-    - name: Setup .NET Core 8.x
-      uses: actions/setup-dotnet@v3
-      with:
-          dotnet-version: "8.x"
-
-    # Install docfx
     - name: Install DocFX
       run: dotnet tool update -g docfx
       shell: bash
